@@ -1,0 +1,34 @@
+body {
+		background-color: #000;
+		color: #00ff00;
+		font-family: "console";
+}
+
+
+.terminal {
+		margin: 25px 50px;
+	}
+
+#intro {
+	font-size: 30px;
+	white-space: nowrap;
+	width: 100%;
+	animation: typing 7s steps(60, end);
+	overflow: hidden;
+}
+
+@keyframes typing {
+	from{
+	width: 0;
+}
+}
+
+.cursor{
+	animation: blink .6s infinite;
+}
+
+@keyframes blink{
+	to{
+		opacity: 0;
+	}
+}
