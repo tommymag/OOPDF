@@ -16,6 +16,10 @@ def study(request):
     }
     return render(request, 'OOPDFapp/study.html', context=context)
 
+def intro(request):
+
+    return render(request, 'OOPDFapp/intro.html')
+
 def game(request):
 
     return render(request, 'OOPDFapp/game.html')

@@ -2,7 +2,7 @@ let flashcards = []
 let flashcardContainer = document.querySelector('#flashcard-container')
 let nextCardBtn = document.querySelector('#next-card-btn')
 let previousCardBtn = document.querySelector('#previous-card-btn')
-let flipCardbtn = document.querySelector('#flip-card-btn')
+let flipCardBtn = document.querySelector('#flip-card-btn')
 
 let currentCard = 0
 let isTerm = true
@@ -20,7 +20,7 @@ fetch('http://localhost:8000/flashcards/')
 		frontBuild(flashcards[currentCard])
 		nextCardBtn.addEventListener('click', nextCard)
 		previousCardBtn.addEventListener('click', previousCard)
-		flipCardbtn.addEventListener('click', flipCard)
+		flipCardBtn.addEventListener('click', flipCard)
 	})	
 
 

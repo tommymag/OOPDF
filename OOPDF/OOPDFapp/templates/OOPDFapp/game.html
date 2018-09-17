@@ -2,7 +2,7 @@
 {% load static %}
 {% block styles %}
 	
-	<link rel='stylesheet' href="{% static 'OOPDFapp/stylesgame.css' %}">
+	<link rel='stylesheet' href="{% static 'OOPDFapp/stylegame.css' %}">
 {% endblock styles %}
 
 {% block content %}
@@ -12,11 +12,15 @@
 <h1>You are gaming</h1>
 
 <div class ="terminal">
-	<p id='intro'>
-	 MVG ... an introduction to the legend of silicon valley - testing testing one two three four <span class="cursor">|</span>
+	<p id='question'>
+	 <span class="cursor">|</span>
 		</p>
+
+<button id="a-select-btn">A</button> <button id ="b-select-btn">B</button> <button id="c-select-btn">C</button> <button id="d-select-btn">D</button>
+
 </div>		
 {% endblock %}
-
-	
+{% block scripts %}
+	<script type="text/javascript" src="{% static 'OOPDFapp/js/game-script.js' %}"></script>
+{% endblock scripts %}
 
