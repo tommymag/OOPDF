@@ -1,4 +1,4 @@
-{% extends "OOPDFapp/base_generic.html" %}
+{% extends "OOPDFapp/base_generic_game.html" %}
 {% load static %}
 {% block styles %}
 	
@@ -8,17 +8,35 @@
 {% block content %}
 	
 </ul>
+<div class="headers">
+	<div class ='score-headers startstatus'>
+	<h1>You are gaming</h1>
+	</div>
 
-<h1>You are gaming</h1>
+	<div class ='score-headers onewrong'>
+	<h1>You're still in this!</h1>
+	<h2>/</h2></div>	
+
+	<div class ='score-headers twowrong'>
+		<h1>Uhhh.. You are fading...</h1>
+	<h2>//</h2></div>	
+</div>
 
 <div class ="terminal">
-	<p id='question'>
+	<div id='question'>
+	</div>
 	 <span class="cursor">|</span>
-		</p>
 
-<button id="a-select-btn">A</button> <button id ="b-select-btn">B</button> <button id="c-select-btn">C</button> <button id="d-select-btn">D</button>
+	<button id="select-btn-a">A</button> <button id ="select-btn-b">B</button> <button id="select-btn-c">C</button> <button id="select-btn-d">D</button>
+</div>
 
-</div>		
+<div class="gameover">
+	<div class ="score-headers Mortem">
+		<h1>Game Over!</h1>
+		<h2>XXX</h2>
+	</div>
+</div>
+
 {% endblock %}
 {% block scripts %}
 	<script type="text/javascript" src="{% static 'OOPDFapp/js/game-script.js' %}"></script>

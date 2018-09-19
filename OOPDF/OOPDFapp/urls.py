@@ -9,4 +9,4 @@ urlpatterns = [
     path('flashcards/', views.flashcard_json, name='flashcard_api'),
     path('intro/', views.intro, name='intro'),
     path('game/', views.game, name='game'),
-]
+    ]
